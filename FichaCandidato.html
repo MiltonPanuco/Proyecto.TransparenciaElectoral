@@ -40,6 +40,11 @@
             margin-right: auto;
         }
 
+        .botonsitoZZZ {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
 
     </style>
 
@@ -52,18 +57,18 @@
         
         <div class="politico-info">
             
-            <img src="candidata.jpeg" alt="Fotografía del Político" class="foto-politico">
+            <img src="fotos/politico1.jpg"Fotografía del Político" class="foto-politico">
             
             <h2>Stella Ramírez</h2>
-            <p>Dinero Gastado en Campaña: $XX,XXX,XXX MXN</p>
+            <p>Dinero Gastado en Campaña: $687,000,000 MXN</p>
             
-            <h3>Experiencia Laboral</h3>
+            <h3>Cargos Públicos Desempeñados</h3>
             
                 <ul>
-                    <li>Puesto 1: Empresa 1</li>
-                    <li>Puesto 2: Empresa 2</li>
-                    <li>Puesto 3: Empresa 3</li>
-                    <li>Puesto 4: Empresa 4</li>
+                    <li>Cargo Público 1</li>
+                    <li>Cargo Público 2</li>
+                    <li>Cargo Público 3 </li>
+                    <li>Cargo Público 4</li>
                 </ul>
             
             <h3>Estudios</h3>
@@ -87,14 +92,21 @@
             
             <p>PARTIDO DE LOS PARTIDOS PARTIDOS</p>
 <br>
-            <button class="botonsito">Atrás</button>  
+            
+<button  id="redireccionarBtn" class="botonsito">Atrás</button> 
+<button  id="" class="botonsitoZZZ">Siguiente</button>
+               
                 
         </div>
     </div>
 
     <script>
         
-        //JavaScript para la interacción del usuario (opcional)
+        const botonRedireccionar = document.getElementById('redireccionarBtn');
+        botonRedireccionar.addEventListener('click', function() {
+       
+        window.location.href = 'Interfaz.html'; 
+        });
 
     </script>
 
