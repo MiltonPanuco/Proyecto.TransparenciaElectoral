@@ -1,118 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Encuesta con imágenes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de 5 Preguntas de Opción Múltiple</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
         }
-
         .container {
-            width: 50%;
+            max-width: 800px;
             margin: 0 auto;
-            background-color: #fff;
             padding: 20px;
+            background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        h2 {
-            color: #333;
+        h1 {
+            text-align: center;
         }
-
         .question {
             margin-bottom: 20px;
         }
-
-        .option {
-            display: flex;
-            align-items: center;
+        .options label {
+            display: block;
             margin-bottom: 10px;
-        }
-
-        input[type="radio"] {
-            margin-right: 10px;
-        }
-
-        label {
-            font-weight: bold;
-        }
-
-        img {
-            max-width: 100px;
-            max-height: 100px;
-            margin-left: 20px;
-        }
-
-        button {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Encuesta con imagenes</h2>
-        <form>
-            
+        <h1>Formulario de 5 Preguntas de Opción Múltiple</h1>
+
             <div class="question">
-                
-                <p>1. Si hoy fueran las elecciones para presidente fuera hoy, ¿Por cual candidato votarias?</p>
-                
-                <div class="option">
-                    <input type="radio" id="option1" name="animal" value="candidato1">
-                    <label for="option1">Stella</label>
-                    <img src="candidato1.jpeg" alt="Candidato1">
+                <p>Pregunta 1: Si la elección para presidente fuera hoy, ¿Por cuál candidato votarías?</p>
+                <div class="options">
+                    <label>
+                        <img src="politico1.jpg" alt="Politico 1">
+                        <input type="radio" name="pregunta1" value="politico1"> Pedro
+                    </label>
+                    <label>
+                        <img src="politico2.jpg" alt="Politico 2">
+                        <input type="radio" name="pregunta1" value="politico2"> Juan
+                    </label>
+                    <label>
+                        <img src="politico3.jpg" alt="Politico 3">
+                        <input type="radio" name="pregunta1" value="politico3"> Roberto
+                    </label>
                 </div>
-
-                <div class="option">
-                    <input type="radio" id="option2" name="animal" value="candidato2">
-                    <label for="option2">Paulina</label>
-                    <img src="candidato2.jpeg" alt="Candidato2">
-                </div>
-
-                <div class="option">
-                    <input type="radio" id="option3" name="animal" value="candidato3">
-                    <label for="option3">Alfredo</label>
-                    <img src="candidato3.jpeg" alt="Candidato3">
-                </div>
-
             </div>
 
             <div class="question">
-                
-                <p>2. La preugunta numero dos está aqui</p>
-                
-                <div class="option">
-                    <input type="radio" id="option1" name="animal" value="candidato1">
-                    <label for="option1">Stella</label>
-                    <img src="candidato1.jpeg" alt="Candidato1">
+                <p>Pregunta 2: ¿Cuál sería tu segunda opción?</p>
+                <div class="options">
+                    <label>
+                        <img src="politico1.jpg" alt="Politico 1">
+                        <input type="radio" name="pregunta2" value="politico1"> Pedro
+                    </label>
+                    <label>
+                        <img src="politico2.jpg" alt="Politico 2">
+                        <input type="radio" name="pregunta2" value="politico2"> Juan
+                    </label>
+                    <label>
+                        <img src="politico3.jpg" alt="Politico 3">
+                        <input type="radio" name="pregunta2" value="politico3"> Roberto
+                    </label>
                 </div>
-
-                <div class="option">
-                    <input type="radio" id="option2" name="animal" value="candidato2">
-                    <label for="option2">Paulina</label>
-                    <img src="candidato2.jpeg" alt="Candidato2">
-                </div>
-
-                <div class="option">
-                    <input type="radio" id="option3" name="animal" value="candidato3">
-                    <label for="option3">Alfredo</label>
-                    <img src="candidato3.jpeg" alt="Candidato3">
-                </div>
-
             </div>
 
-            <!-- Repite el bloque de pregunta y opción para las siguientes preguntas -->
+            <div class="question">
+                <p>Pregunta 3: ¿Por cuál de estos JAMÁS votarías?</p>
+                <div class="options">
+                    <label>
+                        <img src="politico1.jpg" alt="Politico 1">
+                        <input type="radio" name="pregunta3" value="politico1"> Pedro
+                    </label>
+                    <label>
+                        <img src="politico2.jpg" alt="Politico 2">
+                        <input type="radio" name="pregunta3" value="politico2"> Juan
+                    </label>
+                    <label>
+                        <img src="politico3.jpg" alt="Politico 3">
+                        <input type="radio" name="pregunta3" value="politico3"> Roberto
+                    </label>
+                </div>
+            </div>
 
-            <button type="submit">Enviar</button>
+            <div class="question">
+                <p>Pregunta 4: ¿-----?</p>
+                <div class="options">
+                    <label>
+                        <img src="politico1.jpg" alt="Politico 1">
+                        <input type="radio" name="pregunta4" value="politico1"> Pedro
+                    </label>
+                    <label>
+                        <img src="politico2.jpg" alt="Politico 2">
+                        <input type="radio" name="pregunta4" value="politico2"> Juan
+                    </label>
+                    <label>
+                        <img src="politico3.jpg" alt="Politico 3">
+                        <input type="radio" name="pregunta4" value="politico3"> Roberto
+                    </label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Pregunta 5: ¿----?</p>
+                <div class="options">
+                    <label>
+                        <img src="politico1.jpg" alt="Politico 1">
+                        <input type="radio" name="pregunta5" value="politico1"> Pedro
+                    </label>
+                    <label>
+                        <img src="politico2.jpg" alt="Politico 2">
+                        <input type="radio" name="pregunta5" value="politico2"> Juan
+                    </label>
+                    <label>
+                        <img src="politico3.jpg" alt="Politico 3">
+                        <input type="radio" name="pregunta5" value="politico3"> Roberto
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit">Enviar respuestas</button>
         </form>
     </div>
 </body>
